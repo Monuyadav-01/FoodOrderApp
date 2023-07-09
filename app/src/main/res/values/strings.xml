@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FoodOrderApp</string>
+    <string name="wave_of_food">Wave Of Food</string>
+    <string name="logo">logo</string>
+    <string name="made_by_monu">Made By Monu</string>
+    <string name="deliver_best_food">Deliver Best Food</string>
+    <string name="designed_by_monu">Designed By Monu</string>
+    <string name="start">start</string>
+    <string name="enjoy_restaurant_quality_meals_at_home">Enjoy Restaurant Quality Meals at Home</string>
+    <string name="next">Next</string>
+    <string name="deliver_favorite_food">Deliver Favorite Food</string>
+    <string name="login_to_account">Login to Account</string>
+    <string name="todo">TODO</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="or">or</string>
+    <string name="google">Google</string>
+    <string name="facebook">FaceBook</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_account">Don’t Have Account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_here">Sign Up Here</string>
+    <string name="username">UserName</string>
+    <string name="signup_account">SignUp Account</string>
+    <string name="choose_your_location">Choose Your Location</string>
+    <string name="locationText">To provide you with the best dining experience, we need your permission to access your device\'s location. By enabling location services, we can offer personalized restaurant recommendations, accurate delivery estimates, and ensure a seamless food delivery experience.</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="search">Search</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="bellicon">bellIcon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore_your_favorite_food">Explore Your Favorite Food</string>
+</resources>
