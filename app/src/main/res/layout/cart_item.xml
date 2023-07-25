@@ -7,9 +7,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -18,70 +23,84 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/foodImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/foodphoto"
                 android:src="@drawable/ic_launcher_background"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-
-                />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
-                app:layout_constraintBottom_toTopOf="@+id/textView15"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/cartFoodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/itemPrice"
+                app:layout_constraintStart_toEndOf="@+id/foodImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/itemPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+                app:layout_constraintStart_toEndOf="@+id/foodImage"
+                app:layout_constraintTop_toBottomOf="@+id/cartFoodName" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/minusItem"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@drawable/loginsignupbtn"
                 android:contentDescription="@string/minus"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView17"
+                app:layout_constraintEnd_toStartOf="@+id/quantity"
                 app:layout_constraintHorizontal_bias="0.548"
-                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintStart_toEndOf="@+id/cartFoodName"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.264"
                 app:srcCompat="@drawable/minus" />
 
             <TextView
-                android:id="@+id/textView17"
+                android:id="@+id/quantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="96dp"
-                android:text="TextView"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
-                app:layout_constraintStart_toEndOf="@+id/textView14"
-                app:layout_constraintTop_toTopOf="@+id/imageButton3"
+                android:text="1"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/minusItem"
+                app:layout_constraintStart_toEndOf="@+id/cartFoodName"
+                app:layout_constraintTop_toTopOf="@+id/minusItem"
                 app:layout_constraintVertical_bias="0.482" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/plusItem"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:contentDescription="@string/plus"
                 android:background="@drawable/loginsignupbtn"
-                app:layout_constraintBottom_toBottomOf="@+id/textView17"
+                android:contentDescription="@string/plus"
+                app:layout_constraintBottom_toBottomOf="@+id/quantity"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView17"
-                app:layout_constraintTop_toTopOf="@+id/textView17"
+                app:layout_constraintStart_toEndOf="@+id/quantity"
+                app:layout_constraintTop_toTopOf="@+id/quantity"
                 app:srcCompat="@drawable/plus" />
+
+            <ImageButton
+                android:id="@+id/trash"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/trash"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/plusItem"
+                app:layout_constraintStart_toEndOf="@+id/minusItem"
+                app:layout_constraintTop_toBottomOf="@+id/quantity"
+                app:srcCompat="@drawable/trash" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

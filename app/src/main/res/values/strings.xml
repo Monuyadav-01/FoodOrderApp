@@ -37,4 +37,6 @@
     <string name="minus">minus</string>
     <string name="image">image</string>
     <string name="_1">1</string>
+    <string name="trash">trash</string>
+    <string name="foodphoto">foodphoto</string>
 </resources>
