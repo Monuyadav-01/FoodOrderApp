@@ -39,4 +39,8 @@
     <string name="_1">1</string>
     <string name="trash">trash</string>
     <string name="foodphoto">foodphoto</string>
+    <string name="_1dv">1</string>
+    <string name="itemprice">ItemPrice</string>
+    <string name="button">Button</string>
+    <string name="proceed">Proceed</string>
 </resources>

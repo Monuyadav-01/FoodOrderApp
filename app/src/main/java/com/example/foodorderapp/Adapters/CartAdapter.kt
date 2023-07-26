@@ -33,7 +33,49 @@ class CartAdapter(
                 itemPrice.text = CartItemPrice[position]
                 foodImage.setImageResource(CartImage[position])
                 quantity.text = quantities.toString()
+
+                minusItem.setOnClickListener {
+                    decreaseQuantity(position)
+                }
+
+                plusItem.setOnClickListener {
+                    increaseQuantity(position)
+                }
+
+                trash.setOnClickListener {
+                    val itemPosition = adapterPosition
+                    if(itemPosition !=RecyclerView.NO_POSITION){
+                        deleteItems(itemPosition)
+                    }
+
+                }
             }
+
+
+        }
+
+        private fun decreaseQuantity(position: Int) {
+            if (itemQuantity[position] > 1) {
+                itemQuantity[position]--
+
+                binding.quantity.text = itemQuantity[position].toString()
+            }
+        }
+
+        private fun increaseQuantity(position: Int) {
+            if (itemQuantity[position] < 10) {
+                itemQuantity[position]++
+
+                binding.quantity.text = itemQuantity[position].toString()
+            }
+        }
+
+        private fun deleteItems(position: Int) {
+            CartItems.removeAt(position)
+            CartItemPrice.removeAt(position)
+            CartImage.removeAt(position)
+            notifyItemRemoved(position)
+            notifyItemChanged(position, CartItems.size)
         }
 
     }
