@@ -56,6 +56,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:text="@string/itemprice"
+                android:textColor="#279E29"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/foodImage"
                 app:layout_constraintTop_toBottomOf="@+id/cartFoodName" />
